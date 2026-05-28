@@ -49,4 +49,15 @@ final class AssertYourselfTests: XCTestCase {
 
         XCTAssertNil(optionalValue)
     }
+    
+    struct SimpleStruct {
+        let x: Int
+        let y: Int
+    }
+    
+    func test_assertNil_withSimpleStruct() {
+        let optionalValue: SimpleStruct? = SimpleStruct(x: 1, y: 2)
+        
+        XCTAssertNil(optionalValue)
+    }
 }
