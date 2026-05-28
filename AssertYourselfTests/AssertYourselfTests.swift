@@ -13,4 +13,8 @@ final class AssertYourselfTests: XCTestCase {
     func test_fail() {
         XCTFail()
     }
+
+    func test_fail_withSimpleMessage() {
+        XCTFail("Houston, we have a problem.")
+    }
 }
