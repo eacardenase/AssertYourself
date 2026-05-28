@@ -23,4 +23,24 @@ final class AssertYourselfTests: XCTestCase {
 
         XCTFail("The Answer to the Great Question is \(theAnswer)")
     }
+
+    func test_avoidConditionalCode() {
+        let success = false
+
+        if !success {
+            XCTFail()
+        }
+    }
+
+    func test_assertTrue() {
+        let success = false
+
+        XCTAssertTrue(success)
+    }
+
+    func test_assertFalse() {
+        let success = true
+
+        XCTAssertFalse(success)
+    }
 }
