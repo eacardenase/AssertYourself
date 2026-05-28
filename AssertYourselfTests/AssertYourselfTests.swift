@@ -43,4 +43,10 @@ final class AssertYourselfTests: XCTestCase {
 
         XCTAssertFalse(success)
     }
+
+    func test_assertNil() {
+        let optionalValue: Int? = 123
+
+        XCTAssertNil(optionalValue)
+    }
 }
