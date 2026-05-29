@@ -50,6 +50,12 @@ final class AssertYourselfTests: XCTestCase {
         XCTAssertNil(optionalValue)
     }
 
+    func test_assertNotNil() {
+        let value: Int? = 123
+
+        XCTAssertNotNil(value)
+    }
+
     struct SimpleStruct {
         let x: Int
         let y: Int
