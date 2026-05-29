@@ -76,4 +76,11 @@ final class AssertYourselfTests: XCTestCase {
 
         XCTAssertNil(optionalValue)
     }
+
+    func test_assertEqual() {
+        let actual = "actual"
+
+        XCTAssertEqual(actual, "expected")
+        // XCTAssertEqual("expected", actual) // same, but less failure message
+    }
 }
